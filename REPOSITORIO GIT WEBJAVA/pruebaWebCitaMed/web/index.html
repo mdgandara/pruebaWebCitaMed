@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Citas Médicas - Registro de Usuario</title>
+  <!-- Enlace a los archivos CSS de Materialize -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Estilos adicionales */
+    main {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+        <header>
+          <!-- Barra de navegación -->
+          <nav class="green darken-1">
+            <div class="nav-wrapper container">
+              <a href="index.html" class="brand-logo">CitaMed</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Registro.html">Crear Usuario</a></li>
+                <li><a href="cita.html">Sacar Citas</a></li>
+                <li><a href="qsomos.html">Quienes somos</a></li>
+                <li><a href="contactar.html">Contactar</a></li>
+                <li><a href="ingresar.html">Ingresar</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Barra de navegación para dispositivos móviles -->
+          <ul class="sidenav" id="mobile-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Registro.html">Crear Usuario</a></li>
+            <li><a href="cita.html">Sacar Citas</a></li>
+            <li><a href="vercita.html">Sacar Citas</a></li>
+            <li><a href="ingresar.html">Ingresar</a></li>
+          </ul>
+        </header>
+
+  <main >        
+
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form name="registro" action="DatosEnviados" method="get">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" class="form-control" name="nombre" value="Mario David">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input id="apellido" type="text" class="form-control" name="apellido" value="Gandara">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="cedula">Cedula</label>
+                            <input id="cedula" type="number" class="form-control" name="cedula" value=8613301>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="celular">Número de Celular</label>
+                            <input id="celular" type="tel" class="form-control" name="celular" value=3012710484>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input id="email" type="email" class="form-control" name="email" value="mdgandara@soy.sena.edu.co">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="password">Direccion</label>
+                            <input id="direccion" type="text" class="form-control" name="direccion" value="Pradera 165lt7 Monteria(Cordoba)">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="form-group text-center">
+                            <button class="btn btn-primary" type="submit" name="action">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+ 
+                        
+                        
+  </main>
+
+  <div class="container">
+    <footer class="page-footer blue-grey lighten-8">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Hospital center</h5>
+          <p class="grey-text text-lighten-4">Tu asistente personal para citas médicas sin demoras</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h9 class="white-text">Eres importante para nosotros</h9>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="contactar.html">Contactanos</a></li>
+            <li><a class="grey-text text-lighten-3" href="aliados.html">Nuestros aliados</a></li>
+            <li><a class="grey-text text-lighten-3" href="casosexito.html">Casos de exito</a></li>
+            <li><a class="grey-text text-lighten-3" href="quejas.html">Quejas y reclamos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <p class="center-align white-text">© 2023 Copyright CitaMed
+              <a class="grey-text text-lighten-4 right" href="ingresar.html">Ingresar</a>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Enlace a los archivos JavaScript de Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    
+    // Inicializar el componente Sidenav para dispositivos móviles
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+
+    // Agregar listeners a los botones de registro con Google y Facebook
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var btnGoogle = document.getElementById('btn-google');
+      var btnFacebook = document.getElementById('btn-facebook');
+
+      btnGoogle.addEventListener('click', function() {
+        // Lógica para iniciar sesión con Google
+      });
+
+      btnFacebook.addEventListener('click', function() {
+        // Lógica para iniciar sesión con Facebook
+      });
+    });
+
+    // Agregar listener al botón de registro
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var btnRegistro = document.getElementById('btn-registro');
+
+
+      btnRegistro.addEventListener('click', function() {
+
+        // Obtener los valores de los campos de registro
+        var nombre = document.getElementById('nombre').value;
+        var apellido = document.getElementById('apellido').value;
+        var celular = document.getElementById('celular').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Validacion de campos
+
+        if (nombre === '' || apellido === '' || celular === '' || email === '' || password === '') {
+          alert('Por favor completa todos los campos.');
+          return;
+        }
+
+        // Enviar los datos al servidor para el registro del usuario
+
+        // Lógica adicional, como mostrar un mensaje de éxito o redirigir a otra página
+      });
+    });
+  </script>
+</body>
+</html>
+
+
