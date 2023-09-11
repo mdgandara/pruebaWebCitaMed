@@ -70,13 +70,13 @@ public void insertarUsuario( String nombre, String apellido, int cedula, String 
         
         // Consulta SQL de inserción
          String sql = "INSERT INTO usuarios (nombre, apellido, cedula, celular, email, password) VALUES (?, ?, ?, ?, ?, ?)";
-            PreparedStatement statement = conexion.prepareStatement(sql);
-            statement.setString(1, nombre);
-            statement.setString(2, apellido);
-            statement.setInt(3, cedula);
-            statement.setString(4, celular);
-            statement.setString(5, email);
-            statement.setString(6, password);
+          PreparedStatement statement = conexion.prepareStatement(sql);
+                            statement.setString(1, nombre);
+                            statement.setString(2, apellido);
+                            statement.setInt(3, cedula);
+                            statement.setString(4, celular);
+                            statement.setString(5, email);
+                            statement.setString(6, password);
 
     // Ejecutar la consulta
     int filasAfectadas = statement.executeUpdate();
